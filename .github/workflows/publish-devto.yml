@@ -1,0 +1,45 @@
+name: Publish tagged article to dev.to
+
+# Manual trigger: push a tag like "article-01" to publish articles/01-*.md
+# No cron, no auto-publish on every push to main — you decide when.
+on:
+  push:
+    tags:
+      - "article-*"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (not the tag's detached commit)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install gray-matter
+
+      - name: Publish tagged article
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          TAG_NAME: ${{ github.ref_name }}
+        run: node scripts/publish-tagged-article.js
+
+      - name: Commit updated front matter back to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: mark ${TAG_NAME} as published on dev.to"
+          git push origin HEAD:main
+        env:
+          TAG_NAME: ${{ github.ref_name }}
