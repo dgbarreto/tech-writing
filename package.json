@@ -1,0 +1,8 @@
+{
+  "name": "tech-writing",
+  "private": true,
+  "description": "Publishing scripts for the tech-writing article repo (tag-triggered dev.to publishing).",
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}
