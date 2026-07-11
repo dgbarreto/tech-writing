@@ -1,9 +1,17 @@
 ---
-title: "Structuring a Kotlin Multiplatform App as a Library Ecosystem: Lessons from Building Finio"
-published: false
-description: "How Finio splits a KMP + Compose Multiplatform app into independently published libraries, and the module-naming trap that leaks into iOS artifact IDs."
-tags: kotlin, kmp, androiddev, architecture
-canonical_url:
+title: >-
+  Structuring a Kotlin Multiplatform App as a Library Ecosystem: Lessons from
+  Building Finio
+published: true
+description: >-
+  How Finio splits a KMP + Compose Multiplatform app into independently
+  published libraries, and the module-naming trap that leaks into iOS artifact
+  IDs.
+tags: 'kotlin, kmp, androiddev, architecture'
+canonical_url: null
+id: 4122040
+devto_url: >-
+  https://dev.to/dgbarreto/structuring-a-kotlin-multiplatform-app-as-a-library-ecosystem-lessons-from-building-finio-4f95
 ---
 
 # Structuring a Kotlin Multiplatform App as a Library Ecosystem: Lessons from Building Finio
