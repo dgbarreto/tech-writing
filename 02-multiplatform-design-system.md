@@ -1,9 +1,17 @@
 ---
-title: "Building a Design System That Actually Gets Used: Tokens, Components, and the AGP 9 Gotcha That Almost Broke It"
-published: false
-description: "How Finio's design system encodes decisions (not just colors) into component APIs, and an AGP 9.x packaging bug that silently strips resources from published KMP libraries."
-tags: androiddev, compose, designsystem, kotlin
-canonical_url:
+title: >-
+  Building a Design System That Actually Gets Used: Tokens, Components, and the
+  AGP 9 Gotcha That Almost Broke It
+published: true
+description: >-
+  How Finio's design system encodes decisions (not just colors) into component
+  APIs, and an AGP 9.x packaging bug that silently strips resources from
+  published KMP libraries.
+tags: 'androiddev, compose, designsystem, kotlin'
+canonical_url: null
+id: 4191625
+devto_url: >-
+  https://dev.to/dgbarreto/building-a-design-system-that-actually-gets-used-tokens-components-and-the-agp-9-gotcha-that-1hh1
 ---
 
 # Building a Design System That Actually Gets Used: Tokens, Components, and the AGP 9 Gotcha That Almost Broke It
