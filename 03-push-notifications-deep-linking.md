@@ -1,9 +1,16 @@
 ---
-title: "FCM Push Notifications and Deep Linking in Compose Multiplatform: The Payload Choice That Breaks Everything"
-published: false
-description: "Why data-only FCM payloads are non-negotiable for background delivery, and how Finio routes push taps into Voyager navigation via a DeepLinkEventBus."
-tags: android, firebase, kotlin, mobile
-canonical_url:
+title: >-
+  FCM Push Notifications and Deep Linking in Compose Multiplatform: The Payload
+  Choice That Breaks Everything
+published: true
+description: >-
+  Why data-only FCM payloads are non-negotiable for background delivery, and how
+  Finio routes push taps into Voyager navigation via a DeepLinkEventBus.
+tags: 'android, firebase, kotlin, mobile'
+canonical_url: null
+id: 4348886
+devto_url: >-
+  https://dev.to/dgbarreto/fcm-push-notifications-and-deep-linking-in-compose-multiplatform-the-payload-choice-that-breaks-jpl
 ---
 
 # FCM Push Notifications and Deep Linking in Compose Multiplatform: The Payload Choice That Breaks Everything
