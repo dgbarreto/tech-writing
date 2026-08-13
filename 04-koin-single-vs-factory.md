@@ -1,9 +1,15 @@
 ---
-title: "The Koin Scope Bug That Teaches You What single vs. factory Actually Means"
-published: false
-description: "A real Koin scoping bug from Finio: AuthViewModel registered as factory{} produced two out-of-sync instances, and how to decide single vs. factory per dependency."
-tags: kotlin, androiddev, dependencyinjection, koin
-canonical_url:
+title: The Koin Scope Bug That Teaches You What single vs. factory Actually Means
+published: true
+description: >-
+  A real Koin scoping bug from Finio: AuthViewModel registered as factory{}
+  produced two out-of-sync instances, and how to decide single vs. factory per
+  dependency.
+tags: 'kotlin, androiddev, dependencyinjection, koin'
+canonical_url: null
+id: 4391650
+devto_url: >-
+  https://dev.to/dgbarreto/the-koin-scope-bug-that-teaches-you-what-single-vs-factory-actually-means-3992
 ---
 
 # The Koin Scope Bug That Teaches You What `single` vs. `factory` Actually Means
